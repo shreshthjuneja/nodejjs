@@ -1,3 +1,4 @@
-const rrtt = /^n/;
+const rrtt = /abc/;
 
-console.log(rrtt.test("naa"));
+console.log(rrtt.test("abcde"));
+
