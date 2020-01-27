@@ -55,6 +55,14 @@ const loadNotes = () => {
 
 const removeNote = (title) => {
 
+    const delnotes = loadNotes();
+
+    const notesToKeep = delnotes.filter((e)=>{
+        return e.title !== title
+    })
+
+    saveNotes(notesToKeep);
+    console.log("note with title:"+title+" is removed");
 
 }
 
