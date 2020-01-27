@@ -6,7 +6,7 @@ const validator = require("validator");
 
 const chalk = require('chalk');
 
-console.log(chalk.yellow('Hello')+' world '+ chalk.blue('!!'));
+console.log(chalk.inverse.yellow.bold('Hello')+chalk.bold(' world ')+ chalk.bold.blue('!!'));
 
 console.log(validator.isURL('www.edd.com'));
 
